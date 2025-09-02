@@ -2,6 +2,25 @@
 ## Discontinued ##
 Due to Samsung's move to the WearOS platform for their smartwatches I am discontinuing development on this project. I am happy to assist anyone who would like to pick it up and maintain it.
 
+## Components
+
+This repository contains two main components:
+
+### 1. Owntracks OSM Smartwatch App
+Owntracks OSM is a standalone, wearable mapping and location sharing app for Samsung Galaxy brand smartwatches. On its own, it can be used to view [OpenStreetMap](https://www.openstreetmap.org) based maps on your watch and display your location using the watch's builtin GPS. In conjunction with an [MQTT](https://mqtt.org) broker and the [Owntracks](https://owntracks.org) protocol, it can be used to share your location with other users and display their locations on your watch in real time.
+
+### 2. Remote ESP32 Component (New!)
+The `Remote_ESP32` directory contains an Arduino-compatible sketch that enables ESP32 microcontrollers to send location data to the same Owntracks MQTT broker used by the smartwatch app. This allows you to create additional remote tracking devices that integrate seamlessly with the Owntracks ecosystem.
+
+**Remote ESP32 Features:**
+- WiFi connectivity for MQTT communication
+- GPS location tracking support
+- Compatible with Owntracks protocol
+- Battery level monitoring
+- Works alongside the smartwatch app
+
+See the [Remote_ESP32/README.md](Remote_ESP32/README.md) for complete setup instructions.
+
 ## Overview
 Owntracks OSM is a standalone, wearable mapping and location sharing app for Samsung Galaxy brand smartwatches. On its own, it can be used to view [OpenStreetMap](https://www.openstreetmap.org) based maps on your watch and display your location using the watch's builtin GPS. In conjunction with an [MQTT](https://mqtt.org) broker and the [Owntracks](https://owntracks.org) protocol, it can be used to share your location with other users and display their locations on your watch in real time.
 

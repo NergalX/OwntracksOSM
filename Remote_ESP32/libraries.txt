@@ -1,0 +1,33 @@
+# Required Libraries for Remote ESP32 Owntracks
+
+Install these libraries through the Arduino IDE Library Manager:
+
+## Core Libraries
+- **PubSubClient** by Nick O'Leary (v2.8 or later)
+  - For MQTT communication with the Owntracks broker
+
+- **ArduinoJson** by Benoit Blanchon (v6.21.3 or later)
+  - For creating and parsing JSON messages in Owntracks format
+
+## Optional Libraries (for GPS functionality)
+- **TinyGPS++** by Mikal Hart (v1.0.3 or later)
+  - For parsing GPS NMEA data from GPS modules
+
+## Built-in ESP32 Libraries (no installation needed)
+- WiFi
+- HardwareSerial
+
+## Installation Instructions
+
+### Arduino IDE:
+1. Open Arduino IDE
+2. Go to Tools > Manage Libraries
+3. Search for each library name and install
+
+### PlatformIO:
+Libraries are automatically installed based on platformio.ini configuration.
+
+## Library Versions Tested
+- PubSubClient: 2.8
+- ArduinoJson: 6.21.3
+- TinyGPS++: 1.0.3

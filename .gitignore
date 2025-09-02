@@ -3,3 +3,6 @@
 .project
 .tproject
 *.wgt
+
+# Remote ESP32 configuration files
+Remote_ESP32/config.h

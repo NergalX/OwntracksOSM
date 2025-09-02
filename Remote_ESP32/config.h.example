@@ -1,0 +1,39 @@
+/*
+ * Configuration file for Remote ESP32 Owntracks device
+ * 
+ * Copy this file to config.h and modify the settings below
+ * to match your WiFi network and MQTT broker configuration.
+ */
+
+#ifndef CONFIG_H
+#define CONFIG_H
+
+// WiFi Configuration
+#define WIFI_SSID "your_wifi_ssid"
+#define WIFI_PASSWORD "your_wifi_password"
+
+// MQTT Broker Configuration
+#define MQTT_SERVER "your.mqtt.broker.com"
+#define MQTT_PORT 8883                    // Use 8883 for TLS, 1883 for unencrypted
+#define MQTT_USERNAME "your_username"
+#define MQTT_PASSWORD "your_password"
+
+// Device Configuration
+#define DEVICE_ID "esp32_remote"          // Unique device identifier
+#define TRACKER_ID "E1"                   // Two-character tracker ID (like initials)
+
+// GPS Configuration
+#define GPS_RX_PIN 16                     // GPIO pin connected to GPS TX
+#define GPS_TX_PIN 17                     // GPIO pin connected to GPS RX
+
+// Timing Configuration
+#define UPDATE_FREQUENCY_SECONDS 30       // How often to send location updates
+
+// Message Configuration
+#define RETAIN_MESSAGES true              // Whether to retain messages on MQTT broker
+
+// TLS Configuration (if using encrypted connection)
+// #define USE_TLS true
+// If using TLS, you may need to add certificate validation
+
+#endif // CONFIG_H
